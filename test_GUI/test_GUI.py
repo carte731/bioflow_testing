@@ -39,6 +39,7 @@ def press(usrnme, psswrd, finalout, choice, hostStr):
     hos = hostStr.get()
     cho = choice.get()
     location = os.path.dirname(os.path.abspath(__file__))
+    location += "/config_files"
     with open(location + "/TEST.Config", "w+") as fileChoices:
         fileChoices.write(finalout + "=" + cho)
     ssh_client = paramiko.SSHClient()
