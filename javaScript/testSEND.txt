@@ -1,0 +1,1 @@
+This is a test to send a txt file to MSI.

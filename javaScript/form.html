@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Bio-Flow config generator</title>
+        <link href="css/style_sheet.css" rel="stylesheet">
+        <script src="javascript/script.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>BioFlow prototype</h1>
+            <div class="results">
+                <h2>config questionnaire</h2>
+            </div>
+        </div>
+        <div class="body">
+            <form name="question" onsubmit="return submitting()">
+                <div class="question">
+                    <h1>Do you like The Last Jedi?</h1>
+                    <input type="radio" name="tq1" value="a">a. no<br> 
+                    <input type="radio" name="tq1" value="b">b. umm no...<br> 
+                    <input type="radio" name="tq1" value="c">c. No, it's poorly written<br> 
+                    <input type="radio" name="tq1" value="d">d. I watched it 6 times<br> 
+                </div>
+                <h1>Remote Server</h1>
+                <div class="question">
+                        <h3>Remote Server Login</h3>
+                        <label for="Login">Login:</label>
+                        <input type="text" name="tq2" value=""/> 
+                </div>
+                <div class="question">
+                        <h3>Remote Server Password</h3>
+                        <label for="password">Password: </label>
+                        <input type="password" name="tq3" value=""/>
+                </div>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </body>
+</html>
